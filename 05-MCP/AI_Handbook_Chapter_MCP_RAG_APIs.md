@@ -336,3 +336,16 @@ conversation history - tool outputs
 -   SDKs usually wrap REST APIs.
 -   RAG retrieves knowledge.
 -   MCP exposes capabilities.
+
+-   | Term                | Meaning                                               | Why It Matters                                                                                              |
+| ------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Workflow Engine** | Executes predefined steps                             | Automates pipelines like PDF ingestion or deployments                                                       |
+| **FastMCP**         | Framework for building MCP servers                    | Handles tool registration, protocol, and communication                                                      |
+| **FastAPI**         | Framework for building REST APIs                      | Used for web services, separate from MCP                                                                    |
+| **stdio Transport** | Local process communication via standard input/output | Great for local MCP servers                                                                                 |
+| **Streamable HTTP** | Communication over HTTP                               | Used for remote/cloud MCP servers                                                                           |
+| **Authentication**  | "Who are you?"                                        | Verifies identity                                                                                           |
+| **Authorization**   | "What can you access?"                                | Enforces permissions (and yes, if Hema is the CEO, she should be authorized to see CEO salary information!) |
+| **Latency**         | Time to get a response                                | Lower latency improves user experience                                                                      |
+| **Token Cost**      | Number of tokens processed                            | Affects API cost and speed                                                                                  |
+| **Context Window**  | Maximum tokens an LLM can handle at once              | Limits how much history and retrieved content can be sent together                                        
